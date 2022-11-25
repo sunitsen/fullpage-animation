@@ -10,7 +10,6 @@
     width: 100%;
     height: auto;
     z-index: 999;
-    display: none;
 }
 
 .template-navbar .navbar-brand {
@@ -313,22 +312,23 @@
     rotate: -90deg;
 }
 
-.slider-thumb::before {
+.slider-thumb {
     position: absolute;
-    content: "";
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
     left: 65%;
     top: 10%;
     width: 600px;
     height: 600px;
-    background: #ff7700;
-    border: 1px solid #ff7700;
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
     will-change: border-radius, transform, opacity;
     animation: sliderShape 5s linear infinite;
     display: block;
     z-index: 1;
     -webkit-animation: sliderShape 5s linear infinite;
-    box-shadow: rgba(240, 133, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px, rgba(240, 124, 46, 0.2) 15px 15px, rgba(240, 140, 46, 0.1) 20px 20px, rgba(240, 149, 46, 0.05) 25px 25px;
 }
 
 @keyframes sliderShape {
